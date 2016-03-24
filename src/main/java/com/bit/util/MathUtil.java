@@ -11,7 +11,7 @@ public class MathUtil {
     }
 
     public static void main(String [] args){
-        Integer res = new MathUtil().add(15,15);
+        Integer res = new MathUtil().add(15,20);
         System.out.print("Result: "+res);
     }
 
