@@ -1,0 +1,16 @@
+stage 'task1'
+node{
+    checkout scm
+}
+
+stage 'task2'
+node{
+    def gradle = tool 'Gradle'
+    bat "${gradle}\\bin\\gradle"
+}
+
+stage 'test'
+node{
+    def gradle = tool 'Gradle'
+    bat "${gradle}\\bin\\gradle test"
+}

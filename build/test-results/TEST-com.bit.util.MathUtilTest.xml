@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.bit.util.MathUtilTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-03-24T05:30:25" hostname="CHETAN" time="0.002">
+  <properties/>
+  <testcase name="addTest" classname="com.bit.util.MathUtilTest" time="0.002"/>
+  <system-out><![CDATA[From addTest===>>>
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
