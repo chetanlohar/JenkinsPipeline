@@ -1,16 +1,14 @@
-stage 'task1'
 node{
-    checkout scm
+    stage 'task1'
+        checkout scm
+    stage 'check-version'
+        gradle '--version'
+    stage 'test'
+        gradle 'test'
+    stage 'build'
+        gradle 'build'
 }
 
-stage 'task2'
-node{
-    def gradle = tool 'Gradle'
-    bat "${gradle}\\bin\\gradle"
-}
-
-stage 'test'
-node{
-    def gradle = tool 'Gradle'
-    bat "${gradle}\\bin\\gradle test"
+def gradle(args){
+    bat "${tool 'Gradle'}\\bin\\gradle ${args}"
 }
